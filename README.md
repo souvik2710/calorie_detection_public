@@ -1,4 +1,10 @@
-# calorie_detection_public
+## Author
+
+Souvik Das
+[Link to Profile](https://www.linkedin.com/in/souvik2710/)
+
+---
+
 This advanced nutrition app leverages multiple Google AI services to provide comprehensive meal analysis through image recognition. Users upload food photos and receive detailed nutritional breakdowns including calories, macronutrients, health ratings, and personalized dietary recommendations.
 
 ---
