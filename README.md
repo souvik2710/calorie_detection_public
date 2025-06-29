@@ -107,6 +107,65 @@ streamlit run calorie_detection_max.py
 
 ---
 
+Certainly! Here's a polished and well-formatted version of the **"Quick Start Sequence"** and **"Pro Tips"** sections for your `README.md`:
+
+---
+
+## ⚡ Quick Start Sequence
+
+Follow these steps carefully to get your AI-powered nutritional analysis app up and running:
+
+1. **Enable Billing on GCP**
+
+   > ℹ️ *Nothing will work until billing is enabled.*
+
+2. **Enable Required APIs**
+   Enable the following Google Cloud APIs **before** creating your service account:
+
+   * Vision API
+   * Translation API
+   * Text-to-Speech API
+   * BigQuery API
+   * Gemini API (via Vertex AI or PaLM API access)
+
+3. **Create a Service Account**
+
+   * Assign the following roles:
+
+     * `BigQuery Admin`
+     * `Vertex AI User` or equivalent for Gemini access
+     * `Cloud Translation API User`
+     * `Cloud Text-to-Speech API User`
+     * `Cloud Vision API User`
+   * **Download the JSON key file** for the service account.
+
+4. **Set the Environment Variable**
+
+   ```bash
+   export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/keyfile.json"
+   ```
+
+5. **Create BigQuery Dataset & Table**
+
+   * Create a dataset in BigQuery (e.g., `nutrition_data`)
+   * Define a schema for the table to store meal analysis results.
+
+6. **Run the Test Script**
+
+   * Use the included `test_services.py` or similar test script.
+   * Verify each service works as expected (Vision, Translation, TTS, BigQuery, Gemini).
+
+---
+
+## 💡 Pro Tips
+
+* ✅ **Start with Vision API only** – test image recognition before integrating other services.
+* 🧪 **Use the test script** to debug and validate each service independently.
+* 📌 **Keep your Project ID handy** – you’ll use it multiple times across setup and scripts.
+* 💰 **Set billing alerts** – avoid surprise charges by configuring budgets and alerts in the **Billing > Budgets & alerts** section.
+
+---
+
 ## 📜 License
 
 [MIT License](LICENSE)
