@@ -113,9 +113,6 @@ streamlit run calorie_detection_max.py
 
 ---
 
-Certainly! Here's a polished and well-formatted version of the **"Quick Start Sequence"** and **"Pro Tips"** sections for your `README.md`:
-
----
 
 ## ⚡ Quick Start Sequence
 
